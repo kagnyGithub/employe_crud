@@ -1,0 +1,19 @@
+<div class="container" >
+    <h1 style="text-align: center;">Ajouter un Employees</h1>
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="firsName" class="form-label">firstName: </label>
+            <input type="text" class="form-control" id="firsName" name="firsName" required [(ngModel)]="employee.firsName" >
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">lastName: </label>
+            <input type="text" class="form-control" id="latName" name="lastName" required [(ngModel)]="employee.lastName">
+          </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" required [(ngModel)]="employee.email">
+        </div>
+        
+        <button type="submit" class="btn btn-primary width-5">Submit</button>
+      </form>
+</div>

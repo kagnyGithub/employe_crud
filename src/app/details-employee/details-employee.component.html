@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card mt-4" *ngIf="employee">
+        <div class="card-header bg-primary">
+             <h2>Details de l'employee</h2>
+        </div>
+        <div class="card-body" style="height: 300px;">
+          <div class="row">
+              <div class="col-4">
+                 <h1>FirstName :</h1>
+              </div>
+              <div class="col-6">
+                    <h2>{{employee.firsName}}</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+               <h1>LastName  :</h1>
+            </div>
+            <div class="col-6">
+                <h2>{{employee.lastName}}</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+               <h1>Email :</h1>
+            </div>
+            <div class="col-6">
+                <h2>{{employee.email}}</h2>   
+          </div>
+        </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-info" [routerLink]="['/employees']">Retourne a la liste</button>
+        </div>
+    </div>
+</div>
